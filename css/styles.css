@@ -1,0 +1,145 @@
+body{
+    background: rgb(58,58,58);
+    color:white;
+    font-family: Helvetica Neun, Helevtica, Arial,  sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* HEADER */
+header{
+    background: black;
+    background-image: url('/images/hero.jpg');
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px;
+    height: 500px;
+    text-align: center;
+    
+}
+
+header a{
+    color:white;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-top: 40px;
+}
+
+header .mobile{
+    display: none;
+}
+
+header .logo a{
+    background-image: url("/images/logo.png");
+    background-size: 300px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    position: relative;
+    top:-30px;
+    width: 300px;
+    height: 80px;
+    text-indent: -9999999px;
+}
+
+nav ul{
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+
+nav li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+/* RESONSIVE RULE */
+@media screen and (max-width:767px){
+
+    header{
+        height: 250px;
+        background-position: 0 -40px;
+    }
+
+    header .mobile{
+        display: inline-block;
+    }
+
+    header .desktop{
+        display: none;
+    }
+}
+
+@media screen and (max-width:378px){
+    header{
+        height: 100px;
+        background-position: 0 0px;
+    }
+}
+
+/* FEATURES */
+.features{
+    background: white;
+    color:gray;
+    padding: 40px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.features figure{
+    margin: auto;
+    width: 400px;
+    height: 300px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.features figure img{
+    border-radius: 50%;
+    width:300px;
+    height:250px;
+    border:1px solid white;
+    box-shadow: gray 2px 2px 10px;
+}
+
+
+li:hover{
+    background-color: rgb(75,75,75);
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+/* RESONSIVE RULE */
+/* @media screen and (max-width:767px){
+    .features{
+        padding: 20px;
+        display: block;
+    }
+} */
+
+/* FOOTER */
+
+footer{
+    background: black;
+    color: gray;
+    font-size: 12px;
+    padding:20px 20px;
+    text-align: center;
+}
+
+/* @media screen and (min-width:500px) {
+    .features{
+        background: pink;
+    }
+}
+
+
+@media screen and (min-width:800px) {
+    .features{
+        background: red;
+    }
+} */
+

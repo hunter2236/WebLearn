@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            color:#666;
+            padding: 0 20%;
+        }
+
+        img{
+            width: 200px;
+        }
+        .hide{
+            display: none;
+        }
+
+        li input{
+            display: none;
+        }
+        li.edit span{
+            display: none;
+        }
+        li.edit input{
+            display: initial;
+        }
+    </style>
+</head>
+<body>
+    <head>
+        <h1>Javascript Events</h1>
+    </head>
+    <div>
+        <h4>Add Numbers:</h4>
+        <p>
+            <input type="text" id="num-one"> + <input type="text" id="num-two">
+        </p>
+        <p id="add-sum"></p>
+    </div>
+
+    <h4>Pictures</h4>
+    <ul>
+        <li><a data-img="simon-pic" id="simon" href="#">Simon Cowell</a></li>
+        <li><a data-img="bruce-pic" id="bruce" href="#">Bruce Willis</a></li>
+        <li><a data-img="ben-pic" id="ben" href="#">Ben Carson</a></li>
+    </ul>
+
+    <img class="hide" id="simon-pic" src="http://upload.wikimedia.org/wikipedia/commons/a/aa/Simon_Cowell_in_December_2011.jpg">
+    <img class="hide" id="bruce-pic" src="http://upload.wikimedia.org/wikipedia/commons/0/03/Bruce_Willis_by_Gage_Skidmore.jpg">
+    <img class="hide" id="ben-pic" src="https://www.conservapedia.com/images/thumb/2/2d/Bccurrent.jpg/200px-Bccurrent.jpg" alt="">
+
+    <h4>Item List</h4>
+    <ul id="checklist">
+        <li>
+            <span>Apples</span>
+            <input type="text" value="Apples">
+        </li>
+        <li>
+            <span>Oranges</span>
+            <input type="text" value="Oranges">
+        </li>
+        <li>
+            <span>Bananas</span>
+            <input type="text" value="Bananas">
+        </li>
+    </ul>
+    <script src="scripts/events.js"></script>
+</body>
+</html>

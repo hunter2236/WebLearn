@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Page</title>
+    <style>
+        body{
+
+            font-family: Helvetica Neun, Helevtica, Arial,  sans-serif;
+
+        }
+        ul{
+            padding: 0px;
+            list-style-type: none;
+        }
+        li{
+            display: inline-block;
+            background-color: gray;
+            border-radius: 3px;
+            padding:2px;
+            margin-left: 2px;
+        }
+
+        /* peseudo class */
+        li:first-child{
+            margin-left: 0px;
+        }
+        li:hover{
+            background-color: red;
+        }
+        a{
+            text-decoration: none;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+
+        section.feature-box{
+            display: flex;
+        }
+        .feature-box div{
+            width: 100%;
+            margin: px;
+        }
+        section.feature-box.sales div{
+            background: gray;
+
+        }
+        section.feature-box.closeouts div{
+            background: pink;
+        }
+        #frank{
+            font-size: 150%;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <!-- header -->
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="pages/locations.html">Locations</a></li>
+                <li><a href="pages/contact.html">Contact</a></li>
+                <li><a href="pages/directions.html">Directions</a></li>
+            </ul>
+        </nav>
+        <h1>Test</h1>
+    </header>
+    <section id="frank" class="feature-box sales">
+        <!-- triple-section -->
+        <div>Section a</div>
+        <div>Section b</div>
+        <div>Section c</div>
+    </section>
+    <section class="feature-box closeouts">
+        <div>Section d</div>
+        <div>Section e</div>
+    </section>
+
+</body>
+</html>
