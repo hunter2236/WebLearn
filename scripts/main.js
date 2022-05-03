@@ -4,8 +4,7 @@
 
 
 function go(name, age){
-    alert(name);
-    alert(age);
+    console.log("Name is " + name + ", age is " + age);
 }
 
 function add(first, second){
