@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <h1>Let's Have Fun!</h1>
+            <button class="panel-button" data-panelid="panel1">#btn1</button>
+            <button class="panel-button" data-panelid="panel2">#btn2</button>
+            <button class="panel-button" data-panelid="panel3">#btn3</button>
+            <button class="panel-button" data-panelid="panel4">#btn4</button>
+        </div>
+        <div class="row">
+            <div class="col-xs-3">
+                <div id="panel1" class="panel panel-primary">
+                    <div class="panel-heading">
+                        #panel1
+                    </div>
+                    <div class="panel-body">
+                        content
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-3">
+                <div id="panel2" class="panel panel-primary">
+                    <div class="panel-heading">
+                        #panel2
+                    </div>
+                    <div class="panel-body">
+                        content
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-3">
+                <div id="panel3" class="panel panel-primary">
+                    <div class="panel-heading">
+                        #panel3
+                    </div>
+                    <div class="panel-body">
+                        content
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-3">
+                <div id="panel4" class="panel panel-primary">
+                    <div class="panel-heading">
+                        #panel4
+                    </div>
+                    <div class="panel-body">
+                        content
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="components/jquery/jquery-3.6.0.js"></script>
+    <script>
+        // $(document).ready(function(){
+        // });
+        $(function(){
+            // $('#panel1').hide(3000).show(3000);
+            // $('#panel2').slideUp(3000).delay(1000).slideDown(3000);
+            // $('#panel3').fadeOut(3000).delay(1000).fadeIn(3000);
+            // $('#panel4').fadeToggle(2000).fadeToggle(2000);
+            // $('#panel1').css({
+            //     color:'red',
+            //     fontWeight:'bold',
+            //     opacity:'0.5'
+            // });
+            $('#panel1').hide();
+            $('#panel2').hide();
+            $('#panel3').hide();
+            $('#panel4').hide();
+            
+            var content="My New Awesome Content";
+
+            $('.panel-button').on('click', function(){
+                var panelId=$(this).attr('data-panelid');
+                $('#'+panelId).toggle();
+                $('#'+panelId+" .panel-body").html(content);
+            });
+        });
+    </script>
+</body>
+</html>
