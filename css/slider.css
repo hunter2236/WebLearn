@@ -1,0 +1,41 @@
+/* 
+body{
+    margin: 0px;
+    padding: 0px;
+}
+.container{
+    margin: 0px;
+    padding: 0px;
+}
+.header{
+    margin: 0px;
+    padding: 0px;
+} */
+#slider{
+    background-color: pink;
+    width: 400px;
+    height: 300px;
+    overflow: hidden;
+}
+
+#slider .slides{
+    /* display: block; */
+    width: 6000px;
+    height: 300px;
+    margin:0px;
+    padding: 0px;
+
+}
+
+#slider .slide{
+    float: left;
+    list-style-type: none;
+    width: 400px;
+    height: 300px;
+    margin: 0px;
+    padding: 0px;
+}
+#slider img{
+    width: 400px;
+    height: 300px;
+}
