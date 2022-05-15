@@ -1,5 +1,5 @@
-//import Mustache from 'mustache.js'
-//var Mustache = require('mustache');
+"use strict"
+
 console.log(Mustache.version);
 
 $(function(){

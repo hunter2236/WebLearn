@@ -1,7 +1,7 @@
 // piece of code that does one or more actions
 // do not repeat yourself
 
-
+"use strict"
 
 function go(name, age){
     console.log("Name is " + name + ", age is " + age);
